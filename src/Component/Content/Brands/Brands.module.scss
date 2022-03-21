@@ -1,0 +1,28 @@
+.wrapper__brand{
+    padding-top: 80px;
+    &__inner{
+        box-sizing: border-box;
+        padding: 0 15px ;
+        .service__item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            width: 31.9%;
+            background-color: #f3f3eb;
+            height: 100px;
+            box-sizing: border-box;
+            margin: 0 10px;
+            &:first-child{
+                margin-left: 0;
+            }
+            i{
+                svg{
+                    font-size: 50px;
+                    color: burlywood;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

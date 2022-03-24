@@ -5,6 +5,7 @@ import styles from "./Content.module.scss"
 import style from "../../SCSS/styles.module.scss"
 import New from './New/New'
 import Brands from './Brands/Brands'
+import Footer from './Footer/Footer'
  function Index() {
   return (
     <div className={styles.wrapper__content__inner}>
@@ -14,6 +15,7 @@ import Brands from './Brands/Brands'
    <List_products/>
    <New/>
    <Brands/>
+   <Footer/>
     </div>
   )
 }

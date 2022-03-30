@@ -11,8 +11,10 @@ export default function footer() {
   return (
     <div className={styles.wrapper__footer}>
          <div className={style.container}>
-             <div className={styles.content__left}>
-                 <p>Hãy kết nối với chúng tôi thông qua các trang mạng xã hội:</p>
+            <div className={style.row}>
+           <div className={styles.content__inner}>
+           <div className={styles.content__left}>
+                 <p>Hãy kết nối với chúng tôi thông qua các trang mạng xã hội :</p>
                  <div className={styles.icon}>
                      <i><TiSocialFacebook/></i>
                      <i><TiSocialGooglePlus/></i>
@@ -33,15 +35,20 @@ export default function footer() {
                    </div>
                  </div>
              </div>
-             {/* <div>
-               <ul>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
+             <div className={styles.content__right}>
+               <ul>Useful Links :
+                 <li>About Us</li>
+                 <li>Contact Us</li>
+                 <li>Shop by Categories</li>
+                 <li>Shopping Cart</li>
+                 <li>FAQ's</li>
                </ul>
-             </div> */}
+             </div>
+             <div className={styles.map}>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1861.608118138001!2d105.77788740812883!3d21.06402404634868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134555743ca25ef%3A0xca481659e95c29c6!2zVsSDbiBQaMOybmcgTHXhuq10IFPGsCBMw6ogTmd1ecOqbiBHacOhcA!5e0!3m2!1svi!2s!4v1648392464902!5m2!1svi!2s"></iframe>
+             </div>
+           </div>
+            </div>
          </div>
     </div>
   )

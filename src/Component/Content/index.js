@@ -15,7 +15,8 @@ useEffect(()=>{
   })
 }, [] )
   return (
-    <div className={styles.wrapper__content__inner}>
+    <div className={styles.wrap__content}>     
+     <div className={styles.wrapper__content__inner}>
    <div className={style.container}>
       <Banner/>
    </div>
@@ -24,6 +25,7 @@ useEffect(()=>{
    <Brands/>
    <Footer/>
     </div>
+   </div>
   )
 }
 export default Index

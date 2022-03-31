@@ -1,3 +1,4 @@
 @import './Global/Global.module.scss';
-@import '../Component/Header/Header.module.scss';
+@import "../Component/Slide&Header/slide.module.scss";
+@import "../Component/Slide&Header/Header/Header.module.scss";
 @import '../Component/Content/Content.module.scss';

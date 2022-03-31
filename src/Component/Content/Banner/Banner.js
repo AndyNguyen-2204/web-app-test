@@ -12,7 +12,7 @@ export default function Products(list_product) {
    }, [])
   return (
    <div className={styles.wrapper__banner}>
-     <div  data-aos="zoom-in" data-aos-delay="200" className={styles.banner_content}>
+     <div  data-aos="zoom-in-down" data-aos-delay="400" className={styles.banner_content}>
        <h1 className={styles.banner_content__title}>Chúng tôi là</h1>
        <span className={styles.banner_content__name}>Tuna Tea</span>
        <p>Thứ hai đến Thứ bảy <b>8:30am - 11:00pm </b>| Hotline: <b>090.635.1080</b></p>

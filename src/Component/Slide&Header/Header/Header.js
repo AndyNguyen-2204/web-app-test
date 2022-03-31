@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './Header.module.scss'
+import styles from "./Header.module.scss"
 import { FiZoomOut} from "react-icons/fi";
 import {FiTool } from "react-icons/fi";
 import { FiSmartphone } from "react-icons/fi";
-import Logo from "../../Assess/Images/logo.png"
+import Logo from "../../../Assess/Images/logo.png"
 export default function Header() {
   return (
     <div className={styles.header}>

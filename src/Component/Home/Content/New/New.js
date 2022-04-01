@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./New.module.scss"
-import style from "../../../SCSS/styles.module.scss"
+import style from "../../../../SCSS/styles.module.scss"
 export default function New() {
   return (
     <div className={styles.wrapper__new}>

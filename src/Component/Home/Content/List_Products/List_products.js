@@ -2,7 +2,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React,{useEffect} from 'react'
 import styles from './List.module.scss'
-import style from "../../../SCSS/styles.module.scss"
+import style from "../../../../SCSS/styles.module.scss"
 import { FiEye } from "react-icons/fi";
 import { FaLink} from "react-icons/fa";
 import { IoCartOutline} from "react-icons/io5";

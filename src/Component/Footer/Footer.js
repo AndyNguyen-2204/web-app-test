@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./footer.module.scss"
-import style from "../../../SCSS/styles.module.scss";
+import style from "../../SCSS/styles.module.scss"
 import { TiSocialFacebook } from "react-icons/ti";
 import {TiSocialGooglePlus} from "react-icons/ti";
 import {TiSocialInstagram} from "react-icons/ti";

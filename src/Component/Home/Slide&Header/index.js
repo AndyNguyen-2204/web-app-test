@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header/Header'
-import style from "../../SCSS/styles.module.scss"
+import style from "../../../SCSS/styles.module.scss"
 import Carousel from 'react-elastic-carousel';
 import styles from "./slide.module.scss"
 export default function Slide() {

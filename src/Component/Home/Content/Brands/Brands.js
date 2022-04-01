@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Brands.module.scss";
-import style from "../../../SCSS/styles.module.scss";
+import style from "../../../../SCSS/styles.module.scss"
 import { GoThumbsup } from "react-icons/go";
 import { FiTruck } from "react-icons/fi";
 import { IoLogoUsd } from "react-icons/io";

@@ -1,12 +1,10 @@
 import './App.css';
 import styles from './SCSS/styles.module.scss'
-import Content from "./Component/Content/index"
-import Slide from './Component/Slide&Header';
+import Home from "./Component/Home/Home"
 function App() {
   return (
     <div className={styles.Wrapper}>
-      <Slide />
-      <Content />
+    <Home/>
     </div>
   );
 }

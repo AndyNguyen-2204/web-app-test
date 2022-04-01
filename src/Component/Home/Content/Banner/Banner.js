@@ -1,6 +1,6 @@
 import Img from "./Images/img_test.jpg"
 import styles from "./Banner.module.scss"
-import style from "../../../SCSS/styles.module.scss"
+import style from "../../../../SCSS/styles.module.scss"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React,{useEffect} from 'react'

@@ -1,12 +1,20 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styles from "./Header.module.scss"
 import { FiZoomOut} from "react-icons/fi";
 import {FiTool } from "react-icons/fi";
 import { FiSmartphone } from "react-icons/fi";
-import Logo from "../../../../Assess/Images/logo.png"
+import Logo from "../../../../Assess/Images/logo.jpg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Header() {
+    useEffect(()=>{
+        AOS.init({
+          
+        })
+       }, [])
   return (
-    <div className={styles.header}>
+    <div data-aos="fade-down"
+    data-aos-anchor-placement="center-bottom" data-aos-delay="500"  className={styles.header}>
     <div className={styles.navigation}>
         <ul className={styles.content_left}>
             <li>Trang chủ </li>

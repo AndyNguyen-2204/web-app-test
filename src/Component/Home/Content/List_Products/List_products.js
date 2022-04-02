@@ -15,10 +15,10 @@ export default function List_products() {
   return (
     <div className={styles.wrapper__list}>
       <div className={style.container}>
-        <h1 data-aos="zoom-in" data-aos-delay="200">Menu hôm nay</h1>
-        <span data-aos="zoom-in" data-aos-delay="200" className={styles.wrapper__list__title}>Xem menu hôm nay</span>
+        <h1 data-aos="zoom-in" data-aos-delay="500">Menu hôm nay</h1>
+        <span data-aos="zoom-in" data-aos-delay="700" className={styles.wrapper__list__title}>Xem menu hôm nay</span>
         <div className={styles.wrapper__list__tab}>
-          <ul  data-aos="slide-left" data-aos-delay="300">
+          <ul  data-aos="fade-down" data-aos-delay="900">
             <li>Bán chạy</li>
             <li>Món mới</li>
             <li>Nước hoa quả</li>
@@ -27,7 +27,7 @@ export default function List_products() {
         </div>
         <div className={styles.wrap__all__products}>
           <div className={style.row}>
-            <div className={styles.wrap__product}>
+            <div data-aos="flip-up" data-aos-delay="500" className={styles.wrap__product}>
               <div className={styles.wrap__product__inner}>
               <div className={styles.img__icon}>
               <img src='https://pdp.edu.vn/wp-content/uploads/2021/06/hinh-anh-tra-sua-dep-ngon-nhat.jpg'></img>
@@ -49,7 +49,7 @@ export default function List_products() {
               </div>
 
             </div>
-            <div className={styles.wrap__product}>
+            <div data-aos="flip-up" data-aos-delay="500" className={styles.wrap__product}>
               <div className={styles.wrap__product__inner}>
                 
                 <div className={styles.img__icon}>
@@ -71,7 +71,7 @@ export default function List_products() {
               </div>
 
             </div>
-            <div className={styles.wrap__product}>
+            <div data-aos="flip-up" data-aos-delay="500" className={styles.wrap__product}>
               <div className={styles.wrap__product__inner}>
                
                 <div className={styles.img__icon}>
@@ -93,7 +93,7 @@ export default function List_products() {
               </div>
 
             </div>
-            <div className={styles.wrap__product}>
+            <div data-aos="flip-up" data-aos-delay="500" className={styles.wrap__product}>
               <div className={styles.wrap__product__inner}>
                
                 <div className={styles.img__icon}>
@@ -115,7 +115,7 @@ export default function List_products() {
               </div>
 
             </div>
-            <div className={styles.wrap__product}>
+            <div data-aos="flip-up" data-aos-delay="500" className={styles.wrap__product}>
               <div className={styles.wrap__product__inner}>
                 
                 <div className={styles.img__icon}>
@@ -137,7 +137,7 @@ export default function List_products() {
               </div>
 
             </div>
-            <div className={styles.wrap__product}>
+            <div data-aos="flip-up" data-aos-delay="500" className={styles.wrap__product}>
               <div className={styles.wrap__product__inner}>
                 
   
@@ -160,7 +160,7 @@ export default function List_products() {
               </div>
 
             </div>
-            <div className={styles.wrap__product}>
+            <div data-aos="flip-up" data-aos-delay="500" className={styles.wrap__product}>
               <div className={styles.wrap__product__inner}>
                 
                 <div className={styles.img__icon}>
@@ -182,7 +182,7 @@ export default function List_products() {
               </div>
 
             </div>
-            <div className={styles.wrap__product}>
+            <div data-aos="flip-up" data-aos-delay="500" className={styles.wrap__product}>
               <div className={styles.wrap__product__inner}>
               <div className={styles.img__icon}>
                 <img src='https://cdn.boxhoidap.com/nhung-hinh-anh-tra-sua-dep-nhat--0c839d0593a20f0f012d12088e4dc54f.wepb'></img>

@@ -4,7 +4,7 @@ import styles from "./Products.module.scss"
 import Logo from "./Images/logo_header.jpg"
 import { IoSearchSharp } from "react-icons/io5";
 import Product_content from './content-products/Product_content';
-export default function Products() {
+export default function Products({data}) {
   return (
     <div className={styles.wrapper__products}>
       <div className={styles.header__products}>
@@ -17,7 +17,7 @@ export default function Products() {
         </div>
         <div className={styles.login}> Đăng Nhập</div>
       </div>
-        <Product_content/>
+        <Product_content data={data}/>
     </div>
   )
 }

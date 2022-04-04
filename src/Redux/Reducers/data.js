@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   data:[]
+ 
 }
-
 export const data = createSlice({
   name: 'data',
   initialState,
@@ -14,6 +14,7 @@ export const data = createSlice({
       state.data = action.payload
     },
   },
+  
 })
 
 // Action creators are generated for each case reducer function

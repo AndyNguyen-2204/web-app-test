@@ -1,12 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styles from "../../Content_products.module.scss"
 import { HiChevronDown, HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
 export default function category_nb({data,onSetNB}) {
+  // const [count,setCount]=useState([])
     function categoryNB(){
         let result=null;
         if(data.length>0){
-          result = data.map((item,index)=>{
-          if(item.category==="NB"){
+         result=data.filter(item=>item.category==="NB")
+          return(
+            result.map(item=>{
               return(
                 <div  className={styles.category_item}>
                 <div className={styles.img}>
@@ -21,10 +23,10 @@ export default function category_nb({data,onSetNB}) {
                 </div>
               </div>  
               )
-          }   
-          })
-          return result;
+            })
+          )
         }
+        return result
       }
   return (
     <>{categoryNB()}</>

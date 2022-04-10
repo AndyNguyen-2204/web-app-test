@@ -1,32 +1,24 @@
 import React,{useState} from 'react'
 import styles from "../../Content_products.module.scss"
+import { useDispatch } from 'react-redux';
 import { HiChevronDown, HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
-export default function category_nb({data,onSetNB}) {
+import { click_on_data } from '../../../../../Redux/Reducers/view_item';
+import Product_item from "./Product_NB/product_NB"
+export default function category_nb({data,setIsModalVisible}) {
+  const dispatch=useDispatch
   // const [count,setCount]=useState([])
     function categoryNB(){
         let result=null;
         if(data.length>0){
-         result=data.filter(item=>item.category==="NB")
-          return(
-            result.map(item=>{
+            result=data.map( (item,index)=>{
+            if(item.category==="NB"){
               return(
-                <div  className={styles.category_item}>
-                <div className={styles.img}>
-                  <img src={item.url} alt=""/>
-                </div>
-                <div className={styles.item_title}>
-                           {item.name}
-                </div>
-                <div className={styles.cost}>
-                  <span>{item.cost}</span>
-                  <i><HiOutlinePlusCircle/></i>
-                </div>
-              </div>  
+               <Product_item key={index} product={item} setIsModalVisible={setIsModalVisible}/>
               )
+            }
             })
-          )
+            return result
         }
-        return result
       }
   return (
     <>{categoryNB()}</>

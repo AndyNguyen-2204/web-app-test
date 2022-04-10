@@ -1,12 +1,17 @@
 import React from 'react'
 import styles from "../Content_products.module.scss"
-export default function content_left() {
+export default function content_left({data}) {
+  const numberNB=data?.filter(item=>item.category==="NB")
+  const numberTS=data?.filter(item=>item.category==="TS")
+  const numberFFT=data?.filter(item=>item.category==="FFT")
+  const numberMCC=data?.filter(item=>item.category==="MCC")
+  const numberSCD=data?.filter(item=>item.category==="SCD")
     const category = [
-        { id: 1, tittle: "Món nổi bật", number: "2" },
-        { id: 2, tittle: "Trà Sữa", number: "2" },
-        { id: 3, tittle: "Fresh Fruit Teat", number: "2" },
-        { id: 4, tittle: "Macchiato Cream Cheese", number: "2" },
-        { id: 5, tittle: "Sữa Chua Dẻo", number: "2" }
+        { id: 1, tittle: "Món nổi bật", number: numberNB.length },
+        { id: 2, tittle: "Trà Sữa", number: numberTS.length },
+        { id: 3, tittle: "Fresh Fruit Teat", number: numberFFT.length },
+        { id: 4, tittle: "Macchiato Cream Cheese", number: numberMCC.length },
+        { id: 5, tittle: "Sữa Chua Dẻo", number: numberSCD.length }
       ]
   return (
     <>

@@ -31,3 +31,9 @@
   background-color: rgb(133, 33, 196) !important;
   color: white !important;
 }
+.ant-modal-content{
+  background-color: #fbfbfb !important;
+}
+.ant-btn {
+  display: none !important;
+}

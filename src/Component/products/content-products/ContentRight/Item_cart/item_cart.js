@@ -6,11 +6,13 @@ import { HiChevronDown, HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-
 import cart from '../../../../../Redux/Reducers/cart';
 export default function item_cart() {
   const data_item = useSelector(state => state.cart)
-  console.log(data_item)
   const quantityitem = parseInt(data_item?.cart?.quantity)
+  const valueSelect = data_item.cart.valueall
+  const size=valueSelect?.valueSize?.slice(4)
+  console.log(size)
   function showcost() {
     return (
-      data_item?.cart?.data_item?.cost * data_item?.cart?.quantity
+      data_item?.cart?.product?.cost * data_item?.cart?.quantity
     )
   }
   return (
@@ -20,19 +22,21 @@ export default function item_cart() {
         <span>Xóa tất cả</span>
       </div>
       <div className={styles.view_cart}>
-        {data_item?.cart?.product?.length > 0 || data_item?.cart?.data_item?.length >0 ? <div className={styles.cart_item}>
+        {data_item?.cart?.product?.length < 1 ? <div className={styles.noti_cart}>Chưa có sản phẩm nào trong giỏ hàng</div> : <div className={styles.cart_item}>
           <div className={styles.info_item}>
-            <div>{data_item?.cart?.data_item?.name}</div>
-            <div>30% đá,70% đường</div>
-            <div>{data_item?.cart?.data_item?.cost} x {quantityitem} = {showcost()}đ</div>
+            <div>{data_item?.cart?.product?.name} </div>
+            <div>{valueSelect?.valueSugar ?valueSelect.valueSugar : ""}
+            {valueSelect?.valueIce ? "," + valueSelect.valueIce : ""}{valueSelect?.value ? "," + valueSelect.value : ""}
+            </div>
+            <div>{data_item?.cart?.product?.cost} x {quantityitem} = {showcost()}đ</div>
           </div>
           <div className={styles.quantity_item}>
             <i><HiOutlineMinusCircle /></i>
             <span>1</span>
             <i><HiOutlinePlusCircle /></i>
           </div>
-        </div> :
-          <div className={styles.noti_cart}>Chưa có sản phẩm nào trong giỏ hàng</div>}
+        </div>
+        }
       </div>
       <div className={styles.all_cost}>
         <div className={styles.all_cost_content}>

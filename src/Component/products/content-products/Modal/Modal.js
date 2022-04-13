@@ -63,16 +63,16 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
         setIsModalVisible(false);
     };
     const Add_cart=(product)=>{
-             setValueall({
-                valueSize:valueSize,
-                valueSugar:valueSugar,
-               valueIce:valueIce,
-               value:value
-             })
+          const tmp={
+            valueSize:valueSize,
+            valueSugar:valueSugar,
+           valueIce:valueIce,
+           value:value
+          }
              dispatch(add_to_cart({
                 product:product,
                 quantity:quantity,
-                valueall:valueall
+                valueall:tmp
                 
             }))
              setIsModalVisible(false)

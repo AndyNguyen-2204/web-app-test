@@ -12,12 +12,6 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
     const [valueSize,setValueSize]=useState("")
     const[valueSugar,setValueSugar]=useState("")
     const[valueIce,setValueIce]=useState("")
-    const[valueall,setValueall]=useState({
-        valueSize:valueSize,
-        valueSugar:valueSugar,
-       valueIce:valueIce,
-       value:value
-    })
     const dispatch = useDispatch()
     // const showModal = () => {
     //     setIsModalVisible(true);
@@ -73,7 +67,6 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
                 product:product,
                 quantity:quantity,
                 valueall:tmp
-                
             }))
              setIsModalVisible(false)
     }

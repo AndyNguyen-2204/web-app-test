@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./Content_products.module.scss"
 import style from "../../../SCSS/styles.module.scss"
 import { useState } from 'react';
-import { HiChevronDown, HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
+import { HiChevronDown } from "react-icons/hi";
 import Category_nb from './ContentMid/CategoryNB/category_nb';
 import Category_ts from './ContentMid/CategoryTS/category_ts';
 import Category_fft from './ContentMid/CategoryFFT/category_fft';

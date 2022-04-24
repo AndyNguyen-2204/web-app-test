@@ -19,7 +19,9 @@ export default function Header() {
     <div className={styles.navigation}>
         <ul className={styles.content_left}>
             <li>Trang chủ </li>
-            <li>Giới thiệu</li>   
+            <li>
+                <Link to="/recommend">Giới thiệu</Link>
+                </li>   
             <li>
                 <Link to="/products">Sản phẩm</Link>
             </li>

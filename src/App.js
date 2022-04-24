@@ -1,6 +1,7 @@
 import './App.css';
 import styles from './SCSS/styles.module.scss'
 import Home from "./Component/Home/Home"
+import Recommend from "./Component/Recommend/Index"
 import {
   BrowserRouter,
   Routes,
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         <Route path="/" exam element={<Home/>} />
         <Route path="/products" element={<Products data={data}/>} />
+        <Route path="/recommend" element={<Recommend />} />
       </Routes>
     </div>
   );

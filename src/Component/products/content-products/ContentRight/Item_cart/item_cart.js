@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
 import styles from "../../Content_products.module.scss"
 import img_glass from "../../../Images/icon-glass-tea.png"
 import { useSelector } from 'react-redux';
@@ -9,6 +9,15 @@ import Item from './Item/Item';
 export default function Item_cart() {
   const data_item = useSelector(state => state.cart)
   const dispatch=useDispatch()
+  function total_money(){
+    let total=0
+    if((data_item.cart).length>0){
+      for(var i=0;i<(data_item.cart).length;i++){
+        total+=data_item.cart[i].product.cost*data_item.cart[i].quantity
+      }
+    }
+    return total
+  }
   function Showall(){
     let sum=0
     if(data_item.cart.length>0){
@@ -39,7 +48,7 @@ export default function Item_cart() {
           <span id={styles.x}>x</span>
           <span>{Showall()}</span>
           <span>=</span>
-          <span>38000đ</span>
+          <span>{total_money()}đ</span>
         </div>
         <button>Thanh toán</button>
       </div>

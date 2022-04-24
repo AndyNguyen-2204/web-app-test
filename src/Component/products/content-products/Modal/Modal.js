@@ -12,6 +12,7 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
     const [valueSize,setValueSize]=useState("")
     const[valueSugar,setValueSugar]=useState("")
     const[valueIce,setValueIce]=useState("")
+    const [checked,setCheked]=useState(false) 
     const dispatch = useDispatch()
     // const showModal = () => {
     //     setIsModalVisible(true);
@@ -47,6 +48,7 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
             result
         )
     }
+   
     function onMinus() {
         setQuantity(quantity - 1)
     }
@@ -115,10 +117,10 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
                         </div>
                         <div className={styles.wrap__checkbox}>
                             <div className={styles.circlecheck}>
-                                <input type="radio" onChange={(e)=>setValueSize(e.target.value)} className={styles.circle_1} name="selector2" value="Size L" />Size L
+                                <input type="radio" onChange={(e)=>setValueSize(e.target.value)} className={styles.circle_1} name="selector2" value="Size L"  />Size L
                             </div>
                             <div className={styles.circlecheck}>
-                                <input type="radio" onChange={(e)=>setValueSize(e.target.value)} className={styles.circle_2} name="selector2" value="Size M" />Size M
+                                <input type="radio" onChange={(e)=>setValueSize(e.target.value)} className={styles.circle_2} name="selector2" value="Size M"  />Size M
                             </div>
                         </div>
                         <div className={styles.category}>

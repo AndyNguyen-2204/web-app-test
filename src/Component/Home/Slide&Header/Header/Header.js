@@ -4,6 +4,7 @@ import { FiZoomOut} from "react-icons/fi";
 import {FiTool } from "react-icons/fi";
 import { FiSmartphone } from "react-icons/fi";
 import Logo from "../../../../Assess/Images/logo.jpg"
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 export default function Header() {
@@ -19,7 +20,9 @@ export default function Header() {
         <ul className={styles.content_left}>
             <li>Trang chủ </li>
             <li>Giới thiệu</li>   
-            <li>Sản phẩm</li>
+            <li>
+                <Link to="/products">Sản phẩm</Link>
+            </li>
         </ul>
         <div className={styles.logo}> 
             <img src={Logo}/>

@@ -2,19 +2,26 @@ import './App.css';
 import styles from './SCSS/styles.module.scss'
 import Home from "./Component/Home/Home"
 import Recommend from "./Component/Recommend/Index"
+import Order from './Component/Order/Order';
 import {
   BrowserRouter,
   Routes,
   Route,
+  useLocation
 } from "react-router-dom";
 import Products from './Component/products/Products';
-import { useLayoutEffect } from "react"
+import { useLayoutEffect ,useEffect} from "react"
 import { useDispatch, useSelector } from "react-redux"
 import axios from 'axios';
 import { fetchdata, dataerr } from "./Redux/Reducers/data"
 function App() {
   const dispatch = useDispatch();
   const data = useSelector(state => state.data.data)
+  const location=useLocation()
+  console.log(location)
+useEffect(()=>{
+  window.scrollTo(0,0)
+},[location])
   useLayoutEffect(() => {
     axios.get("https://614742a965467e0017384abf.mockapi.io/Api/AllItem")
       .then(res => {
@@ -30,6 +37,7 @@ function App() {
         <Route path="/" exam element={<Home/>} />
         <Route path="/products" element={<Products data={data}/>} />
         <Route path="/recommend" element={<Recommend />} />
+        <Route path="/order" element={<Order />} />
       </Routes>
     </div>
   );

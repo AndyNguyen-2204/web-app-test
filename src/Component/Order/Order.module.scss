@@ -1,0 +1,67 @@
+@import "../../SCSS/styles.module.scss";
+.wrap__order{
+    background: #fff4f8;
+    font-family: Baloo2-Bold;
+    .section{
+        font-size: 20px;
+        display: inline-block;
+        padding: 10px 40px;
+        border-bottom: 1px solid #e3c383;
+        border-top: 1px solid #e3c383;
+        position: relative;
+        text-align: center !important;
+        text-transform: uppercase;
+        color: #e7b45a;
+        margin-top: 100px;
+        &::before {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #e3c383;
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            content: "";
+            left: 10px;
+        }
+
+        &::after {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #e3c383;
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            content: "";
+            right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+    }
+    .wrap__step{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:50px 0;
+        .title{
+            width: 40%;
+            &_vn{
+                font-size: 23px;
+                font-weight: 600;
+            }
+            &_en{
+                font-size: 20px;
+                padding-left:30px
+            }
+        }
+        .img{
+            width: 60%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

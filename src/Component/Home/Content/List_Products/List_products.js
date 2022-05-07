@@ -35,7 +35,7 @@ export default function List_products() {
       result = (data_all.data).map(e => {
         if (e.category === data) {
           return(
-            <div data-aos="flip-up" data-aos-delay="500" className={styles.wrap__product}>
+            <div data-aos="zoom-in" data-aos-delay="500" className={styles.wrap__product}>
             <div className={styles.wrap__product__inner}>
               <div className={styles.img__icon}>
                 <img src={e.url}></img>

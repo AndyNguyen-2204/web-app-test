@@ -30,7 +30,9 @@ export default function Header() {
             <img src={Logo}/>
         </div>
         <ul className={styles.content_right}>
-            <li>dịch vụ</li>
+            <li>
+                <Link to="order">Dịch vụ</Link>
+            </li>
             <li>Tin tức</li>
             <li>Liên Hệ</li>
         </ul>

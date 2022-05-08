@@ -8,6 +8,7 @@
     color: aliceblue;
     font-size: 17px;
     margin-top: 5%;
+    font-family: Baloo2-Bold;
     .navigation{
         background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
         display: flex;
@@ -58,16 +59,21 @@
       }
       .icon{
           margin-right: 10px;
+       a{
+        border-right: 1px solid #fff;
         i{
             font-size: 20px;
             padding: 0 12.5px;
-            border-right: 1px solid #fff;
+            
             cursor: pointer;
             color: #fff;
+            :hover{
+                color: aqua;
+                transform: scale(1.05);
+            }
         }
-        :hover{
-            color: aqua;
-        }
+       }
+        
         :last-child{
             border: none;
         }

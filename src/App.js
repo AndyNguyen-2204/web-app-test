@@ -14,11 +14,11 @@ import { useLayoutEffect ,useEffect} from "react"
 import { useDispatch, useSelector } from "react-redux"
 import axios from 'axios';
 import { fetchdata, dataerr } from "./Redux/Reducers/data"
+import Button_scroll_top from "./Component/Button_scroll_top/Button_scroll_top"
 function App() {
   const dispatch = useDispatch();
   const data = useSelector(state => state.data.data)
   const location=useLocation()
-  console.log(location)
 useEffect(()=>{
   window.scrollTo(0,0)
 },[location])
@@ -33,6 +33,7 @@ useEffect(()=>{
   }, [])
   return (
     <div className={styles.Wrapper}>
+      <Button_scroll_top/>
       <Routes>
         <Route path="/" exam element={<Home/>} />
         <Route path="/products" element={<Products data={data}/>} />

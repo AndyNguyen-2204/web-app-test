@@ -10,24 +10,10 @@ export const cart = createSlice({
   initialState,
   reducers: {
     add_to_cart: (state, action) => {
-    // console.log(action.payload)
-    //  var index=-1;
-    //   
-    //   var quantity=action.payload.quantity
-    //   index=findProductIndex(cart_1,product)
-    //   if(index !== -1){
-    //     cart_1[index].quantity +=quantity
-    //   }else{
-    //   cart_1.push(action.payload)
-        
-    //   }
-    //   return [...cart_1]
-    state.cart.push(action.payload)
-    
-    },
-    minus_quantity:(state,action)=>{
       var index=-1;
       var product=action.payload.product
+      var quantity=action.payload.quantity
+      var size=action.payload.valueall.valueSize
       const findProductIndex =(product)=>{
         const cart_1=state.cart
           for(var i =0;i<cart_1.length;i++){
@@ -39,15 +25,42 @@ export const cart = createSlice({
         return index
       }
         index=findProductIndex(product)
+    if(index!==-1&&state.cart[index].valueall.valueSize===size){
+      state.cart[index].quantity+=quantity
+      
+    }else{
+      state.cart.push(action.payload)
+    }
+    
+    },
+    minus_quantity:(state,action)=>{
+      var index=-1;
+      var product=action.payload.product
+      var size=action.payload.valueall.valueSize
+      const findProductIndex =(product)=>{
+        const cart_1=state.cart
+        for(var i =0;i<cart_1.length;i++){
+          if(cart_1[i].product.id===product.id&&cart_1[i].valueall.valueSize===size){
+            index=i;
+            break
+          }
+        }
+        return index
+      }
+        index=findProductIndex(product)
         state.cart[index].quantity-=1
+        if(state.cart[index].quantity<1){
+          state.cart[index].quantity=1
+        }
     },
     plus_quantity:(state,action)=>{
       var index=-1;
       var product=action.payload.product
+      var size=action.payload.valueall.valueSize
       const findProductIndex =(product)=>{
         const cart_1=state.cart
           for(var i =0;i<cart_1.length;i++){
-            if(cart_1[i].product.id===product.id){
+            if(cart_1[i].product.id===product.id&&cart_1[i].valueall.valueSize===size){
               index=i;
               break
             }

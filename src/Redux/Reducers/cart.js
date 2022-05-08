@@ -17,7 +17,7 @@ export const cart = createSlice({
       const findProductIndex =(product)=>{
         const cart_1=state.cart
           for(var i =0;i<cart_1.length;i++){
-            if(cart_1[i].product.id===product.id){
+            if(cart_1[i].product.id===product.id&&state.cart[i].valueall.valueSize===size){
               index=i;
               break
             }
@@ -25,11 +25,13 @@ export const cart = createSlice({
         return index
       }
         index=findProductIndex(product)
+        console.log(index);
     if(index!==-1&&state.cart[index].valueall.valueSize===size){
       state.cart[index].quantity+=quantity
-      
+      console.log(1);
     }else{
       state.cart.push(action.payload)
+      console.log(2);
     }
     
     },

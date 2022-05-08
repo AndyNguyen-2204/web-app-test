@@ -1,0 +1,19 @@
+.wrap_button_scroll{
+    position:fixed;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ff00ec;
+    z-index: 6;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+    right: 50px;
+    svg{
+        height: 25px;
+        width: 25px;
+        color: aliceblue;
+    }
+}

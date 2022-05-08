@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import { minus_quantity, plus_quantity } from '../../../../../../Redux/Reducers/cart';
 export default function Item({data}) {
     const quantityitem = parseInt(data?.quantity)
-    console.log(data);
     const size=data?.valueall?.valueSize?.split(" ")
     const dispatch=useDispatch();
     function showcost() {  

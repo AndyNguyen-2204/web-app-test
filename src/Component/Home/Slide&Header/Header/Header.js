@@ -1,8 +1,7 @@
 import React,{useEffect} from 'react'
 import styles from "./Header.module.scss"
-import { FiZoomOut} from "react-icons/fi";
-import {FiTool } from "react-icons/fi";
-import { FiSmartphone } from "react-icons/fi";
+import { BsFillBasket2Fill } from "react-icons/bs";
+import { BsPersonFill} from "react-icons/bs";
 import Logo from "../../../../Assess/Images/logo.jpg"
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
@@ -37,8 +36,8 @@ export default function Header() {
             <li>Liên Hệ</li>
         </ul>
         <div className={styles.icon}>
-        <i><FiZoomOut/></i>
-        <i><FiTool/></i>
+        <Link to="/products"><i><BsFillBasket2Fill/></i></Link>
+        <Link to="login"><i><BsPersonFill/></i></Link>
     </div>
     </div>
 </div>

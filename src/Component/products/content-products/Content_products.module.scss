@@ -159,6 +159,7 @@
                     box-sizing: border-box;
                     margin: 10px 15px;
                     padding: 8px 0;
+                    position: relative;
 
                     .info_item {
                         width: 75%;
@@ -181,6 +182,20 @@
                             }
                         }
                     }
+                   .item_content_right{
+                       .delete_item{
+                           position: absolute;
+                           top: 0;
+                           right: 0;
+                           cursor: pointer;
+                           i{
+                               display: inline-block;
+                               margin-left: 5px;
+                               font-size: 15
+                               
+                            
+                           }
+                       }
                     .quantity_item {
                         display: flex;
                         justify-content: center;
@@ -194,6 +209,7 @@
                             padding: 0 5px;
                         }
                     }
+                   }
                 }
                 .noti_cart {
                     font-size: 14px;

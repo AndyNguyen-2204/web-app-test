@@ -3,7 +3,7 @@ import styles from "../../Content_products.module.scss"
 import img_glass from "../../../Images/icon-glass-tea.png"
 import { useSelector } from 'react-redux';
 import { HiChevronDown, HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
-import cart, { clear_cart } from '../../../../../Redux/Reducers/cart';
+import { clear_cart } from '../../../../../Redux/Reducers/cart';
 import { useDispatch } from 'react-redux';
 import Item from './Item/Item';
 export default function Item_cart() {

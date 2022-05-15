@@ -11,7 +11,9 @@ export default function Header_page() {
               <img src={Logo} alt=""/>
               </Link>
               <div className={styles.login}>
-                  Đăng nhập
+              <Link to="/sign_in">
+                Đăng nhập
+              </Link>
               </div>
            </div>
     </>

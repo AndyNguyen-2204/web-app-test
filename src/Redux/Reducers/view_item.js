@@ -10,11 +10,14 @@ export const view_item = createSlice({
     click_on_data: (state, action) => {
       state.item = action.payload
     },
+    search_item:(state,action)=>{
+      state.item=action.payload
+    }
   },
   
 })
 
 // Action creators are generated for each case reducer function
-export const { click_on_data } = view_item.actions
+export const { click_on_data,search_item } = view_item.actions
 
 export default view_item.reducer

@@ -37,7 +37,7 @@ export default function Header() {
         </ul>
         <div className={styles.icon}>
         <Link to="/products"><i><BsFillBasket2Fill/></i></Link>
-        <Link to="login"><i><BsPersonFill/></i></Link>
+        <Link to="/sign_in"><i><BsPersonFill/></i></Link>
     </div>
     </div>
 </div>

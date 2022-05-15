@@ -7,8 +7,9 @@
         width: 100%;
         height: 400px;
         position: relative;
-        background: linear-gradient(rgb(131, 131, 226), 10%, pink);
+        animation: pulse 7s infinite;
         margin-top: 10px;
+
 
         .banner_content {
             position: absolute;
@@ -68,11 +69,30 @@
         }
     }
 
+    @keyframes pulse {
+        0% {
+            background: linear-gradient(135deg, rgba(228, 255, 209, 1) 17%, rgba(255, 253, 208, 1) 54%, rgba(255, 238, 209, 1) 63%, rgba(255, 208, 210, 1) 100%);
+        }
+
+        30% {
+            background: linear-gradient(135deg, rgba(228, 255, 209, 1) 14%, rgba(255, 220, 208, 1) 37%, rgba(255, 238, 209, 1) 73%, rgba(255, 208, 210, 1) 100%);
+        }
+
+        60% {
+            background: linear-gradient(135deg, rgba(255, 253, 209, 1) 12%, rgba(233, 255, 208, 1) 46%, rgba(255, 240, 208, 1) 58%, rgba(255, 237, 209, 1) 84%, rgba(255, 208, 210, 1) 97%);
+        }
+
+        100% {
+            background: linear-gradient(135deg, rgba(228, 255, 209, 1) 12%, rgba(237, 255, 213, 1) 31%, rgba(208, 255, 235, 1) 38%, rgba(255, 240, 208, 1) 52%, rgba(209, 235, 255, 1) 67%, rgba(255, 208, 210, 1) 86%);
+        }
+    }
+
     .content_page_recommend {
         text-align: center;
         background-color: rgba(246, 246, 246, 255);
         height: auto;
-        padding: 100px 0 ;
+        padding: 100px 0;
+
         .section {
             font-size: 20px;
             display: inline-block;
@@ -157,6 +177,7 @@
     .content_page_recommend_bot {
         background-color: #f8e5de;
         padding: 100px 0;
+
         p {
             margin: 0;
         }

@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 import { HiChevronDown, HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
 import styles from "../../../Content_products.module.scss"
 import { useDispatch } from 'react-redux';
-import { minus_quantity, plus_quantity } from '../../../../../../Redux/Reducers/cart';
+import { delete_item, minus_quantity, plus_quantity } from '../../../../../../Redux/Reducers/cart';
+import { BsXLg } from "react-icons/bs";
 export default function Item({data}) {
     const quantityitem = parseInt(data?.quantity)
     const size=data?.valueall?.valueSize?.split(" ")
@@ -41,10 +42,15 @@ export default function Item({data}) {
       </div>
       <div>{data?.product?.cost} x {quantityitem} = {showcost()}đ</div>
     </div>
+    <div className={styles.item_content_right}>
+    <div onClick={()=>dispatch(delete_item(data))} className={styles.delete_item}>
+      <i><BsXLg/></i>
+    </div>
     <div className={styles.quantity_item}>
       <i onClick={e=>dispatch(minus_quantity(data))} ><HiOutlineMinusCircle /></i>
       <span>{quantityitem}</span>
       <i onClick={e=>dispatch(plus_quantity(data))}><HiOutlinePlusCircle /></i>
+    </div>
     </div>
   </div>
   )

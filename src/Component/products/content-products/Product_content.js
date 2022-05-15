@@ -11,7 +11,7 @@ import Category_scd from './ContentMid/CategorySCD/category_scd';
 import ContentLeft from "./ContentLeft/content_left"
 import Content_right from './ContentRight/content_right';
 import Modal_item from './Modal/Modal';
-export default function Product_content({ data }) {
+export default function Product_content({ data, data_search }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [onHide1, setOnHide1] = useState(false)
   const [onHide2, setOnHide2] = useState(false)
@@ -57,7 +57,7 @@ export default function Product_content({ data }) {
     <div className={styles.wrapper_content__products}>
       <div className={style.container}>
         <div className={styles.content__products__inner}>
-          <ContentLeft  data={data}/>
+          <ContentLeft data={data} />
           <div className={styles.content_mid}>
             <div className={styles.category}>
               <div className={styles.category_title}>
@@ -65,7 +65,7 @@ export default function Product_content({ data }) {
                 <i onClick={OnchangeHide1}><HiChevronDown /></i>
               </div>
               <div className={onHide1 === false ? styles.category_item_list : styles.hide}>
-                <Category_nb data={data}  setIsModalVisible={setIsModalVisible}/>
+                <Category_nb data={data} setIsModalVisible={setIsModalVisible} data_search={data_search} />
               </div>
             </div>
             <div className={styles.category}>
@@ -74,7 +74,7 @@ export default function Product_content({ data }) {
                 <i onClick={OnchangeHide2}><HiChevronDown /></i>
               </div>
               <div className={onHide2 === false ? styles.category_item_list : styles.hide}>
-            <Category_ts data={data}  setIsModalVisible={setIsModalVisible}/>
+                <Category_ts data={data} setIsModalVisible={setIsModalVisible} data_search={data_search} />
               </div>
             </div>
             <div className={styles.category}>
@@ -83,7 +83,7 @@ export default function Product_content({ data }) {
                 <i onClick={OnchangeHide3}><HiChevronDown /></i>
               </div>
               <div className={onHide3 === false ? styles.category_item_list : styles.hide}>
-                <Category_fft data={data}  setIsModalVisible={setIsModalVisible}/>
+                <Category_fft data={data} setIsModalVisible={setIsModalVisible} data_search={data_search} />
               </div>
             </div>
             <div className={styles.category}>
@@ -92,7 +92,7 @@ export default function Product_content({ data }) {
                 <i onClick={OnchangeHide4}><HiChevronDown /></i>
               </div>
               <div className={onHide4 === false ? styles.category_item_list : styles.hide}>
-            <Category_mcc data={data}  setIsModalVisible={setIsModalVisible}/>
+                <Category_mcc data={data} setIsModalVisible={setIsModalVisible} data_search={data_search} />
               </div>
             </div>
             <div className={styles.category}>
@@ -101,12 +101,12 @@ export default function Product_content({ data }) {
                 <i onClick={OnchangeHide5}><HiChevronDown /></i>
               </div>
               <div className={onHide5 === false ? styles.category_item_list : styles.hide}>
-                <Category_scd data={data}  setIsModalVisible={setIsModalVisible}/>
+                <Category_scd data={data} setIsModalVisible={setIsModalVisible} data_search={data_search} />
               </div>
             </div>
           </div>
-        <Content_right/>
-        <Modal_item isModalVisible={isModalVisible} setIsModalVisible={setIsModalVisible}/>
+          <Content_right />
+          <Modal_item isModalVisible={isModalVisible} setIsModalVisible={setIsModalVisible} />
         </div>
       </div>
     </div>

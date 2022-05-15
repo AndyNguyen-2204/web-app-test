@@ -36,5 +36,9 @@
         background: #d8b979;
         filter: drop-shadow(2px 3px 6px #3c3c42);
         cursor: pointer;
+        a{
+            height: auto !important;
+            color: rgba(0, 0, 0, 0.85);
+        }
     }
 }

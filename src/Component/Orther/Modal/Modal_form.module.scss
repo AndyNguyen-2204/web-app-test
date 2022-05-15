@@ -1,0 +1,47 @@
+@import"../../../SCSS/styles.module.scss";
+.wrap_modal{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    font-family: "Baloo2-Medium";
+    .box_noti{
+        height: 300px;
+        width: 400px;
+        background: linear-gradient(135deg, rgba(255,253,208,1) 5%, rgba(255,208,210,1) 100%);
+        border-radius: 20px;
+      box-sizing: border-box;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      padding: 0 20px;
+      position: relative;
+      h1{
+          text-transform: uppercase;
+          font-weight: 700;
+      }
+        p{
+               font-size: 20px;
+               font-weight: 700;
+               margin: 0;
+               width: 100%;
+               word-break: break-all; 
+               color: red;
+        }
+        i{
+            top: 15px;
+            right: 20px;
+            position: absolute;
+            cursor: pointer;
+        }
+    }
+}
+.hide{
+    display: none;
+}

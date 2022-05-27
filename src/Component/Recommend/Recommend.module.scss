@@ -2,6 +2,7 @@
 
 .wrapper_recommend_page {
     font-family: Baloo2-Bold;
+    margin-top: 80px;
 
     .banner_img {
         width: 100%;
@@ -29,6 +30,42 @@
                     font-weight: 700;
                     color: #3924f3;
                     margin: 0;
+                    animation: colorBackground 10s infinite;
+                    -webkit-animation: colorBackground 10s infinite;
+                    -moz-animation: colorBackground 10s infinite;
+                    -o-animation: colorBackground 10s infinite
+                }
+
+                @keyframes colorBackground {
+                    0% {
+
+                        color: #fbcf61
+                    }
+
+                    20% {
+
+                        color: #6bd57e
+                    }
+
+                    40% {
+
+                        color: #ff6f6f
+                    }
+
+                    60% {
+
+                        color: #57cff4
+                    }
+
+                    80% {
+
+                        color: #0ed4c8
+                    }
+
+                    100% {
+
+                        color: #fbcf61
+                    }
                 }
 
                 p {
@@ -51,6 +88,7 @@
                         border: solid 1px #3924f3;
                         color: rgb(12, 51, 158);
                         margin-right: 10px;
+                        cursor: pointer;
 
                         svg {
                             display: inline-block;
@@ -59,8 +97,6 @@
 
                         &:hover {
                             transform: scale(1.1);
-                            border-color: antiquewhite;
-                            color: antiquewhite;
 
                         }
                     }

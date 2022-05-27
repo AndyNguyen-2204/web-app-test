@@ -1,29 +1,30 @@
-.Wrapper{
-    margin:0;
-    padding:0;
+.Wrapper {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: auto;
+
     li {
         text-decoration: none;
-     }
-    .slide{
-       height: 100vh;
-       width: 100%;
-        .wrap__container{
-        
-        }
     }
-    .wrap__content{
-      
+
+    .slide {
+        height: 100vh;
+        width: 100%;
+
+        .wrap__container {}
     }
+
+    .wrap__content {}
 }
-.container{
-    width: 1200px;
+
+.container {
     max-width: 1200px;
     box-sizing: border-box;
     margin: 0 auto;
 }
-.row{
+
+.row {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;

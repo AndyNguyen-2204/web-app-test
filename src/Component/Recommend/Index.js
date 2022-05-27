@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import styles from "./Recommend.module.scss"
 import style from "../../SCSS/styles.module.scss"
 import Logo from "../products/Images/logo_header.jpg"
@@ -34,7 +34,6 @@ export default function Index() {
   }, [])
   return (
     <>
-      <Header_page />
       <div className={styles.wrapper_recommend_page}>
         <div className={styles.banner_img}>
           <div className={styles.banner_content}>
@@ -65,7 +64,7 @@ export default function Index() {
                   Rất nhanh chóng, <b>Tuna Tea</b> trở thành điểm đến quen thuộc của các fan trà sữa bởi hương vị đồ uống thơm ngon, dịch vụ chất lượng và không gian thân thiện.Với tiêu chí “Nguyên liệu sạch và có nguồn gốc xuất sứ rõ ràng mới có thể tạo ra những ly đồ uống đạt chất lượng về cả hương vị lẫn nguyên liệu cấu thành”, người sáng lập thương hiệu – chị Hoàng Hiền đã dành một thời gian dài sang Đài Loan để nghiên cứu và chắt chiu tinh hoa ẩm thực trong từng ly đồ uống. Sau bao thử thách, hành trình sáng lập thương hiệu <b>Tuna Tea</b> của nữ doanh nhân đã tạo ra thành quả lớn. <b>Tuna Tea</b> được ra đời với những ly đồ uống đại diện cho tính cách sôi nổi, đam mê, tự tin và tràn đầy nhiệt huyết của giới trẻ hiện đại.
                 </p>
               </div>
-              <div  className={styles.content_page_top_img}>
+              <div className={styles.content_page_top_img}>
                 <img src={Img_content_top}></img>
               </div>
             </div>
@@ -77,19 +76,19 @@ export default function Index() {
               Giá trị cốt lõi
             </h1>
             <div className={styles.wrap_box_info}>
-            {box_info.map((e,index)=>
-               <div key={index} className={styles.box_info}>
-               <div data-aos="zoom-in" data-aos-delay="400" className={styles.img_box}>
-                 <img src={e.url} ></img>
-               </div>
-               <div className={styles.title}>
+              {box_info.map((e, index) =>
+                <div key={index} className={styles.box_info}>
+                  <div data-aos="zoom-in" data-aos-delay="400" className={styles.img_box}>
+                    <img src={e.url} ></img>
+                  </div>
+                  <div className={styles.title}>
                     <p>{e.title}</p>
-               </div>
-               <div className={styles.description}>
+                  </div>
+                  <div className={styles.description}>
                     <p>{e.description}</p>
-               </div>
-             </div>
-            )}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

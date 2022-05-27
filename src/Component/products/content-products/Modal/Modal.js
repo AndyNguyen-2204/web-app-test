@@ -8,11 +8,11 @@ import { add_to_cart } from '../../../../Redux/Reducers/cart';
 export default function Modal_item({ isModalVisible, setIsModalVisible }) {
     const [quantity, setQuantity] = useState(1)
     const product = useSelector(state => state.view_item.item)
-    const [value,setValue]=useState("")
-    const [valueSize,setValueSize]=useState("")
-    const[valueSugar,setValueSugar]=useState("")
-    const[valueIce,setValueIce]=useState("")
-    const [checked,setCheked]=useState(false) 
+    const [value, setValue] = useState("")
+    const [valueSize, setValueSize] = useState("")
+    const [valueSugar, setValueSugar] = useState("")
+    const [valueIce, setValueIce] = useState("")
+    const [checked, setCheked] = useState(false)
     const dispatch = useDispatch()
     // const showModal = () => {
     //     setIsModalVisible(true);
@@ -27,28 +27,28 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
     function Allcost() {
         let result = null;
         result = parseInt(quantity * product.cost)
-        if(value.length>0){
-         if(value==="thêm trân châu sương mai"){
-             result += 9000
-         }
-         if(value==="thêm hạt dẻ"){
-             result +=8000
-         }
-         if(value==="thêm trân châu baby"){
-            result +=8000
-        }
-        if(value==="thêm creamcake"){
-            result +=9000
-        }
-        if(value==="thêm trân châu hoàng kim"){
-            result +=8000
-        }
+        if (value.length > 0) {
+            if (value === "thêm trân châu sương mai") {
+                result += 9000
+            }
+            if (value === "thêm hạt dẻ") {
+                result += 8000
+            }
+            if (value === "thêm trân châu baby") {
+                result += 8000
+            }
+            if (value === "thêm creamcake") {
+                result += 9000
+            }
+            if (value === "thêm trân châu hoàng kim") {
+                result += 8000
+            }
         }
         return (
             result
         )
     }
-   
+
     function onMinus() {
         setQuantity(quantity - 1)
     }
@@ -56,21 +56,23 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
         setQuantity(quantity + 1)
     }
     const handleCancel = () => {
+        setQuantity(1)
         setIsModalVisible(false);
     };
-    const Add_cart=(product)=>{
-          const tmp={
-            valueSize:valueSize,
-            valueSugar:valueSugar,
-           valueIce:valueIce,
-           value:value
-          }
-             dispatch(add_to_cart({
-                product:product,
-                quantity:quantity,
-                valueall:tmp
-            }))
-             setIsModalVisible(false)
+    const Add_cart = (product) => {
+        const tmp = {
+            valueSize: valueSize,
+            valueSugar: valueSugar,
+            valueIce: valueIce,
+            value: value
+        }
+        dispatch(add_to_cart({
+            product: product,
+            quantity: quantity,
+            valueall: tmp
+        }))
+        setQuantity(1)
+        setIsModalVisible(false)
     }
     return (
         <>
@@ -95,7 +97,7 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
                                 <i onClick={() => onMinus()}><HiOutlineMinusCircle /></i>
                                 <span>{quantity}</span>
                                 <i onClick={() => onPlus()}><HiOutlinePlusCircle /></i>
-                                <button onClick={() => Add_cart(product,quantity)} className={styles.all_cost}>
+                                <button onClick={() => Add_cart(product, quantity)} className={styles.all_cost}>
                                     + {Allcost()}
                                 </button>
                             </div>
@@ -117,10 +119,10 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
                         </div>
                         <div className={styles.wrap__checkbox}>
                             <div className={styles.circlecheck}>
-                                <input type="radio" onChange={(e)=>setValueSize(e.target.value)} className={styles.circle_1} name="selector2" value="Size L"  />Size L
+                                <input type="radio" onChange={(e) => setValueSize(e.target.value)} className={styles.circle_1} name="selector2" value="Size L" />Size L
                             </div>
                             <div className={styles.circlecheck}>
-                                <input type="radio" onChange={(e)=>setValueSize(e.target.value)} className={styles.circle_2} name="selector2" value="Size M"  />Size M
+                                <input type="radio" onChange={(e) => setValueSize(e.target.value)} className={styles.circle_2} name="selector2" value="Size M" />Size M
                             </div>
                         </div>
                         <div className={styles.category}>
@@ -129,23 +131,23 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
                         </div>
                         <div className={styles.wrap__checkbox} id={styles.wrap__checkbox_3}>
                             <div className={styles.circlecheck}>
-                                <input onChange={(e)=>setValueSugar(e.target.value)} type="radio" className={styles.circle_1} name="selector3" value="100% đường" />100% đường
+                                <input onChange={(e) => setValueSugar(e.target.value)} type="radio" className={styles.circle_1} name="selector3" value="100% đường" />100% đường
 
                             </div>
                             <div className={styles.circlecheck}>
-                                <input  onChange={(e)=>setValueSugar(e.target.value)} type="radio" className={styles.circle_2} name="selector3" value="70% đường" />70% đường
+                                <input onChange={(e) => setValueSugar(e.target.value)} type="radio" className={styles.circle_2} name="selector3" value="70% đường" />70% đường
 
                             </div>
                             <div className={styles.circlecheck}>
-                                <input  onChange={(e)=>setValueSugar(e.target.value)} type="radio" className={styles.circle_2} name="selector3" value="50% đường" />50% đường
+                                <input onChange={(e) => setValueSugar(e.target.value)} type="radio" className={styles.circle_2} name="selector3" value="50% đường" />50% đường
 
                             </div>
                             <div className={styles.circlecheck}>
-                                <input  onChange={(e)=>setValueSugar(e.target.value)} type="radio" className={styles.circle_2} name="selector3" value="30% đường" />30% đường
+                                <input onChange={(e) => setValueSugar(e.target.value)} type="radio" className={styles.circle_2} name="selector3" value="30% đường" />30% đường
 
                             </div>
                             <div className={styles.circlecheck}>
-                                <input  onChange={(e)=>setValueSugar(e.target.value)} type="radio" className={styles.circle_2} name="selector3" value="không đường" />không đường
+                                <input onChange={(e) => setValueSugar(e.target.value)} type="radio" className={styles.circle_2} name="selector3" value="không đường" />không đường
 
                             </div>
                         </div>
@@ -155,11 +157,11 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
                         </div>
                         <div className={styles.wrap__checkbox}>
                             <div className={styles.circlecheck}>
-                                <input onChange={(e)=>setValueIce(e.target.value)} type="radio" className={styles.circle_1} name="selector4" value="100% đá" />100% đá
+                                <input onChange={(e) => setValueIce(e.target.value)} type="radio" className={styles.circle_1} name="selector4" value="100% đá" />100% đá
 
                             </div>
                             <div className={styles.circlecheck}>
-                                <input  onChange={(e)=>setValueIce(e.target.value)} type="radio" className={styles.circle_2} name="selector4" value="70% đá" />70% đá
+                                <input onChange={(e) => setValueIce(e.target.value)} type="radio" className={styles.circle_2} name="selector4" value="70% đá" />70% đá
 
                             </div>
                         </div>
@@ -167,25 +169,25 @@ export default function Modal_item({ isModalVisible, setIsModalVisible }) {
                             <p>Chọn topping </p>
                             <i><HiChevronDown /></i>
                         </div>
-                        <div  className={styles.wrap__checkbox} id={styles.wrap__checkbox_5}>
+                        <div className={styles.wrap__checkbox} id={styles.wrap__checkbox_5}>
                             <div className={styles.circlecheck}>
-                                <input onChange={(e)=>setValue(e.target.value)} type="radio" className={styles.circle_2} name="selector5" value="thêm trân châu sương mai" />Thêm trân châu sương mai
+                                <input onChange={(e) => setValue(e.target.value)} type="radio" className={styles.circle_2} name="selector5" value="thêm trân châu sương mai" />Thêm trân châu sương mai
                                 <span>+ 9000đ</span>
                             </div>
                             <div className={styles.circlecheck}>
-                                <input onChange={(e)=>setValue(e.target.value)} type="radio" className={styles.circle_2} name="selector5" value="thêm hạt dẻ" />thêm hạt dẻ
+                                <input onChange={(e) => setValue(e.target.value)} type="radio" className={styles.circle_2} name="selector5" value="thêm hạt dẻ" />thêm hạt dẻ
                                 <span>+ 8000đ</span>
                             </div>
                             <div className={styles.circlecheck}>
-                                <input onChange={(e)=>setValue(e.target.value)} type="radio" className={styles.circle_2} name="selector5" value="thêm trân châu baby" />thêm trân châu baby
+                                <input onChange={(e) => setValue(e.target.value)} type="radio" className={styles.circle_2} name="selector5" value="thêm trân châu baby" />thêm trân châu baby
                                 <span>+ 8000đ</span>
                             </div>
                             <div className={styles.circlecheck}>
-                                <input onChange={(e)=>setValue(e.target.value)} type="radio" className={styles.circle_2} name="selector5" value="thêm creamcake" />thêm creamCake
+                                <input onChange={(e) => setValue(e.target.value)} type="radio" className={styles.circle_2} name="selector5" value="thêm creamcake" />thêm creamCake
                                 <span>+ 9000đ</span>
                             </div>
                             <div className={styles.circlecheck}>
-                                <input onChange={(e)=>setValue(e.target.value)} type="radio" className={styles.circle_2} name="selector5" value="thêm trân châu hoàng kim" />thêm trân châu hoàng kim
+                                <input onChange={(e) => setValue(e.target.value)} type="radio" className={styles.circle_2} name="selector5" value="thêm trân châu hoàng kim" />thêm trân châu hoàng kim
                                 <span>+ 8000đ</span>
                             </div>
                         </div>

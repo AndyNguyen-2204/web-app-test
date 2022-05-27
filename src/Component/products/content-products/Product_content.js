@@ -11,7 +11,12 @@ import Category_scd from './ContentMid/CategorySCD/category_scd';
 import ContentLeft from "./ContentLeft/content_left"
 import Content_right from './ContentRight/content_right';
 import Modal_item from './Modal/Modal';
-export default function Product_content({ data, data_search }) {
+import { useSelector } from 'react-redux';
+export default function Product_content({ data }) {
+  const data_search = useSelector(state => state.view_item.value)
+  const data_value = data ? data.filter(item => {
+    return item.name.toLowerCase().includes(data_search.toLowerCase())
+  }) : ""
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [onHide1, setOnHide1] = useState(false)
   const [onHide2, setOnHide2] = useState(false)
@@ -65,7 +70,7 @@ export default function Product_content({ data, data_search }) {
                 <i onClick={OnchangeHide1}><HiChevronDown /></i>
               </div>
               <div className={onHide1 === false ? styles.category_item_list : styles.hide}>
-                <Category_nb data={data} setIsModalVisible={setIsModalVisible} data_search={data_search} />
+                <Category_nb data={data} setIsModalVisible={setIsModalVisible} data_search={data_value} />
               </div>
             </div>
             <div className={styles.category}>
@@ -74,7 +79,7 @@ export default function Product_content({ data, data_search }) {
                 <i onClick={OnchangeHide2}><HiChevronDown /></i>
               </div>
               <div className={onHide2 === false ? styles.category_item_list : styles.hide}>
-                <Category_ts data={data} setIsModalVisible={setIsModalVisible} data_search={data_search} />
+                <Category_ts data={data} setIsModalVisible={setIsModalVisible} data_search={data_value} />
               </div>
             </div>
             <div className={styles.category}>
@@ -83,7 +88,7 @@ export default function Product_content({ data, data_search }) {
                 <i onClick={OnchangeHide3}><HiChevronDown /></i>
               </div>
               <div className={onHide3 === false ? styles.category_item_list : styles.hide}>
-                <Category_fft data={data} setIsModalVisible={setIsModalVisible} data_search={data_search} />
+                <Category_fft data={data} setIsModalVisible={setIsModalVisible} data_search={data_value} />
               </div>
             </div>
             <div className={styles.category}>
@@ -92,7 +97,7 @@ export default function Product_content({ data, data_search }) {
                 <i onClick={OnchangeHide4}><HiChevronDown /></i>
               </div>
               <div className={onHide4 === false ? styles.category_item_list : styles.hide}>
-                <Category_mcc data={data} setIsModalVisible={setIsModalVisible} data_search={data_search} />
+                <Category_mcc data={data} setIsModalVisible={setIsModalVisible} data_search={data_value} />
               </div>
             </div>
             <div className={styles.category}>
@@ -101,7 +106,7 @@ export default function Product_content({ data, data_search }) {
                 <i onClick={OnchangeHide5}><HiChevronDown /></i>
               </div>
               <div className={onHide5 === false ? styles.category_item_list : styles.hide}>
-                <Category_scd data={data} setIsModalVisible={setIsModalVisible} data_search={data_search} />
+                <Category_scd data={data} setIsModalVisible={setIsModalVisible} data_search={data_value} />
               </div>
             </div>
           </div>

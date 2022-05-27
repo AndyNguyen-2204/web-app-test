@@ -4,10 +4,10 @@ import Content from "./Content/index"
 import Footer from "../Footer/Footer"
 export default function Home() {
   return (
-   <>
-   <Slice_Header/>
-   <Content/>
-   <Footer/>
-   </>
+    <>
+      <Slice_Header />
+      <Content />
+      {/* <Footer /> */}
+    </>
   )
 }

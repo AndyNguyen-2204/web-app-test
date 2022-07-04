@@ -1,13 +1,13 @@
 import React from 'react'
-import Slice_Header from "./Slide&Header/index"
-import Content from "./Content/index"
-import Footer from "../Footer/Footer"
+import Banner from './Banner/Banner'
+import ListProducts from './ListProducts/listProducts'
+import SubBanner from './SubBanner/SubBanner'
 export default function Home() {
-  return (
-    <>
-      <Slice_Header />
-      <Content />
-      {/* <Footer /> */}
-    </>
-  )
+    return (
+        <>
+            <Banner />
+            <ListProducts />
+            <SubBanner />
+        </>
+    )
 }

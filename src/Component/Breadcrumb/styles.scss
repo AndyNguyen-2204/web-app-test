@@ -1,0 +1,25 @@
+.wrap__breadCrumb {
+    position: relative;
+    margin-top: 0px;
+
+    &__img {
+        width: 100%;
+        filter: brightness(70%);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}

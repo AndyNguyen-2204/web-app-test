@@ -4,6 +4,10 @@ import 'aos/dist/aos.css';
 import Logo from '../../Assess/Svg/logo';
 import { data_nav_header, data_header_bottom } from './dataNav';
 import { AiOutlineShopping, AiOutlineUser, AiOutlineSearch, AiOutlineHeart } from "react-icons/ai";
+import {
+    Link,
+    useLocation
+} from "react-router-dom";
 import { BsBasket3 } from "react-icons/bs";
 export default function Header() {
     useEffect(() => {
@@ -30,12 +34,12 @@ export default function Header() {
                         <hr />
                         <ul>
                             {data_nav_header.map((e, index) =>
-                                <a key={index} >{e.name}</a>
+                                <Link to={e.slug} key={index} >{e.name}</Link>
                             )}
                         </ul>
                         <hr />
                     </div>
-                    <div className='header__content__bottom'>
+                    <div className="header__content__bottom">
                         {data_header_bottom.map((e, index) =>
                             <div className='header__content__bottom__icon' key={index}>
                                 <div>{e.icon}</div>

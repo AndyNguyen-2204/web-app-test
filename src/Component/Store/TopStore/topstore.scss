@@ -1,0 +1,206 @@
+.wrap__store__top {
+    display: flex;
+    background-color: #ffffff;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    align-items: center;
+    position: relative;
+
+    &__left {
+        display: flex;
+
+        button {
+            border: none;
+            background-color: #ffffff;
+            margin-right: 15px;
+            color: gray;
+
+            &:hover {
+                color: #c8a165
+            }
+        }
+
+        .wap__category__list {
+            width: 200px;
+            background-color: #ffffff;
+            border: 1px solid rgba(0, 0, 0, .15);
+            box-sizing: border-box;
+            padding: 10px 20px;
+            position: absolute;
+            top: 50px;
+            box-shadow: 2px 1px gray;
+
+            p {
+                padding: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #c8a165;
+                }
+            }
+
+        }
+
+        .wrap__price__list {
+            width: 200px;
+            background-color: #ffffff;
+            border: 1px solid rgba(0, 0, 0, .15);
+            box-sizing: border-box;
+            padding: 10px 20px;
+            box-shadow: 2px 1px gray;
+            position: absolute;
+            top: 50px;
+
+            .squaredcheck {
+                padding: 10px;
+
+                &:hover {
+                    color: #c8a165;
+                }
+
+                input,
+                label {
+                    cursor: pointer;
+                }
+
+                label {
+                    margin-left: 10px;
+                }
+            }
+
+        }
+
+        .wrap__color__list {
+            width: 300px;
+            background-color: #ffffff;
+            border: 1px solid rgba(0, 0, 0, .15);
+            box-sizing: border-box;
+            padding: 10px 20px;
+            box-shadow: 2px 1px gray;
+            position: absolute;
+            top: 50px;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+
+                span {
+                    &:hover {
+                        color: #c38b4b;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .id1 {
+                div {
+                    display: flex;
+
+                    div {
+                        background-color: #FFA07A;
+                        height: 13px;
+                        width: 13px;
+                        padding: 0;
+                    }
+
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            .id2 {
+                div {
+                    div {
+                        background-color: #e9967a;
+                        height: 13px;
+                        width: 13px;
+                        padding: 0;
+                    }
+
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            .id3 {
+                div {
+                    div {
+                        background-color: #fe5858;
+                        height: 13px;
+                        width: 13px;
+                        padding: 0;
+                    }
+
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            .id4 {
+                div {
+                    div {
+                        background-color: #00b2ee;
+                        height: 13px;
+                        width: 13px;
+                        padding: 0;
+                    }
+
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            .id5 {
+                div {
+                    div {
+                        background-color: #00eeb3;
+                        height: 13px;
+                        width: 13px;
+                        padding: 0;
+                    }
+
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            .id6 {
+                div {
+                    div {
+                        background-color: #8dc63f;
+                        height: 13px;
+                        width: 13px;
+                        padding: 0;
+                    }
+
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            .id7 {
+                div {
+                    div {
+                        background-color: #c38b4b;
+                        height: 13px;
+                        width: 13px;
+                        padding: 0;
+                    }
+
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import './Global/fonts.scss';
+
+
+$font--primary: "Roboto";
+$font: $font--primary;
+
+@import './Global/base.scss';
+
+
+
+@import "../Component/Header/Header.scss";
+@import "../Component/Home/Banner/Banner.scss";
+@import "../Component/Home/ListProducts/ListProducts.scss";
+@import "../Component/Home/SubBanner/SubBanner.scss";
+@import "../Component/Home/TopRating/TopRating.scss";
+@import "../Component/Home/TopFooter/styles.scss";
+@import "../Component/Breadcrumb/styles.scss";
+@import "../Component/Store/store.scss"

@@ -13,7 +13,29 @@ import Layout from './Component/Layout/layout';
 import Store from "./Component/Store/store"
 import "./SCSS/styles.scss"
 import Home from './Component/Home/Home';
+import { fetchAPI } from './API/fetchAPI';
 function App() {
+  const dispatch = useDispatch()
+  async function fetchAPI() {
+    try {
+      axios.get(`https://614742a965467e0017384abf.mockapi.io/Api/Products`)
+        .then(res => {
+          dispatch(fetchdata(res.data))
+        })
+    } catch (error) {
+      dispatch(dataerr(error))
+    }
+
+  }
+
+  useEffect(() => {
+    // axios.get(`https://614742a965467e0017384abf.mockapi.io/Api/Products`)
+    //   .then(res => {
+    //     dispatch(fetchdata(res.data))
+    //   }).catch(error => dispatch(dataerr(error)))
+    fetchAPI()
+  }, [])
+  const data = useSelector((data) => data.data);
   return (
     <div >
       <Layout>

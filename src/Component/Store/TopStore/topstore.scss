@@ -23,7 +23,7 @@
 
         .wap__category__list {
             width: 200px;
-            background-color: #ffffff;
+            background: linear-gradient(135deg, rgba(248, 255, 208, 1) 0%, rgba(209, 243, 255, 1) 0%);
             border: 1px solid rgba(0, 0, 0, .15);
             box-sizing: border-box;
             padding: 10px 20px;
@@ -44,7 +44,7 @@
 
         .wrap__price__list {
             width: 200px;
-            background-color: #ffffff;
+            background: linear-gradient(135deg, rgba(248, 255, 208, 1) 0%, rgba(209, 243, 255, 1) 0%);
             border: 1px solid rgba(0, 0, 0, .15);
             box-sizing: border-box;
             padding: 10px 20px;
@@ -73,7 +73,7 @@
 
         .wrap__color__list {
             width: 300px;
-            background-color: #ffffff;
+            background: linear-gradient(135deg, rgba(248, 255, 208, 1) 0%, rgba(209, 243, 255, 1) 0%);
             border: 1px solid rgba(0, 0, 0, .15);
             box-sizing: border-box;
             padding: 10px 20px;
@@ -93,111 +93,15 @@
                         cursor: pointer;
                     }
                 }
-            }
 
-            .id1 {
-                div {
-                    display: flex;
+                i {
+                    font-style: normal;
+                    display: inline-block;
+                    margin-left: 10px;
 
-                    div {
-                        background-color: #FFA07A;
-                        height: 13px;
-                        width: 13px;
-                        padding: 0;
-                    }
-
-                    span {
-                        margin-left: 20px;
-                    }
-                }
-            }
-
-            .id2 {
-                div {
-                    div {
-                        background-color: #e9967a;
-                        height: 13px;
-                        width: 13px;
-                        padding: 0;
-                    }
-
-                    span {
-                        margin-left: 20px;
-                    }
-                }
-            }
-
-            .id3 {
-                div {
-                    div {
-                        background-color: #fe5858;
-                        height: 13px;
-                        width: 13px;
-                        padding: 0;
-                    }
-
-                    span {
-                        margin-left: 20px;
-                    }
-                }
-            }
-
-            .id4 {
-                div {
-                    div {
-                        background-color: #00b2ee;
-                        height: 13px;
-                        width: 13px;
-                        padding: 0;
-                    }
-
-                    span {
-                        margin-left: 20px;
-                    }
-                }
-            }
-
-            .id5 {
-                div {
-                    div {
-                        background-color: #00eeb3;
-                        height: 13px;
-                        width: 13px;
-                        padding: 0;
-                    }
-
-                    span {
-                        margin-left: 20px;
-                    }
-                }
-            }
-
-            .id6 {
-                div {
-                    div {
-                        background-color: #8dc63f;
-                        height: 13px;
-                        width: 13px;
-                        padding: 0;
-                    }
-
-                    span {
-                        margin-left: 20px;
-                    }
-                }
-            }
-
-            .id7 {
-                div {
-                    div {
-                        background-color: #c38b4b;
-                        height: 13px;
-                        width: 13px;
-                        padding: 0;
-                    }
-
-                    span {
-                        margin-left: 20px;
+                    &:hover {
+                        color: #c38b4b;
+                        cursor: pointer;
                     }
                 }
             }

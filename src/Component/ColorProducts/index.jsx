@@ -1,6 +1,6 @@
 import React from 'react'
 import "./styles.scss"
-export default function ({ color }) {
+export default function ({ color, index, imgColor }) {
     const divstyles = {
         height: "25px",
         width: "25px",
@@ -8,6 +8,6 @@ export default function ({ color }) {
 
     }
     return (
-        <div className='color__product' style={divstyles}></div>
+        <div className={index === imgColor ? "color__product atv" : "color__product"} style={divstyles}></div>
     )
 }

@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
-
+import { useSelector } from 'react-redux';
+import { DATA_COLOR_TOP_STORE } from './data_color_topStore';
+import SingleColor from "./SingleColor/index"
 export default function Topstore() {
     const [showCategory, setShowCategory] = useState(false)
     const [showPrice, setShowPrice] = useState(false)
     const [showColor, setShowColor] = useState(false)
+    const dataProducts = useSelector((data) => data.data);
+    let hihi = []
     return (
         <div className='wrap__store__top'>
             <div className='wrap__store__top__left'>
@@ -15,7 +19,7 @@ export default function Topstore() {
                     }}>Category</button>
                     {showCategory === true ? <div className='wap__category__list'>
                         <p >- Chair</p>
-                        <p>- Accessories</p>
+                        <p>- Vase</p>
                         <p>- Brands</p>
                     </div> : ""}
                 </div>
@@ -59,47 +63,9 @@ export default function Topstore() {
                         setShowColor(!showColor)
                     }}>Color</button>
                     {showColor == true ? <div className='wrap__color__list'>
-                        <div className='id1'>
-                            <div>
-                                <div></div>
-                                <span>LightSalmon</span>
-                            </div>
-                            <span>12</span>
-                        </div>
-                        <div className='id2'>
-                            <div>
-                                <div></div>
-                                <span>Dark Salmon</span>
-                            </div>
-                            <span>20</span>
-                        </div>
-                        <div className='id3'>
-                            <div>
-                                <div></div>
-                                <span>Tomato</span>
-                            </div>
-                            <span>59</span>
-                        </div>
-                        <div className='id4'>
-                            <div><div></div>
-                                <span>Deep Sky Blue</span></div>
-                            <span>45</span>
-                        </div>
-                        <div className='id5'>
-                            <div> <div></div>
-                                <span>Electric Purple</span></div>
-                            <span>78</span>
-                        </div>
-                        <div className='id6'>
-                            <div><div></div>
-                                <span>Atlantis</span></div>
-                            <span>10</span>
-                        </div>
-                        <div className='id7'>
-                            <div><div></div>
-                                <span>Deep Lilac</span></div>
-                            <span>15</span>
-                        </div>
+                        {DATA_COLOR_TOP_STORE.map((e, index) =>
+                            <SingleColor key={index} color={e.color} name={e.name} />
+                        )}
                     </div> : ""}
                 </div>
             </div>

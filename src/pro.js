@@ -13,19 +13,15 @@
         },
         "url": [
             {
-                "color": "#c38b4b",
+                "color": "#CD853F",
                 "src": "https://media.4rgos.it/i/Argos/9513749_R_Z001A?w=750&h=440&qlt=70"
-            },
-            {
-                "color": "#00b2ee",
-                "src": "https://media.4rgos.it/i/Argos/9543757_R_Z001A?w=750&h=440&qlt=70"
             },
             {
                 "color": "#000000",
                 "src": "https://media.4rgos.it/i/Argos/9527216_R_Z001A?w=750&h=440&qlt=70"
             },
             {
-                "color": "#8dc63f",
+                "color": "#ADFF2F",
                 "src": "https://media.4rgos.it/i/Argos/9512252_R_Z001A?w=750&h=440&qlt=70"
             }
         ],
@@ -47,7 +43,7 @@
         },
         "url": [
             {
-                "color": "#F0A527",
+                "color": "#FFA500",
                 "src": "https://media.4rgos.it/i/Argos/9312098_R_Z001A?w=750&h=440&qlt=70"
             },
             {
@@ -72,7 +68,7 @@
         },
         "url": [
             {
-                "color": "#00b2ee",
+                "color": "#00BFFF",
                 "src": "https://media.4rgos.it/i/Argos/9422586_R_Z001A?w=750&h=440&qlt=70"
             },
             {
@@ -80,7 +76,7 @@
                 "src": "https://media.4rgos.it/i/Argos/9560022_R_Z001A?w=750&h=440&qlt=70"
             },
             {
-                "color": "#8dc63f",
+                "color": "#ADFF2F",
                 "src": "https://media.4rgos.it/i/Argos/9552504_R_Z001A?w=750&h=440&qlt=70"
             }
         ],
@@ -159,25 +155,25 @@
         "id": "C6"
     },
     {
-        "name": "Habitat Etta Pair Velvet Blue Metal Leg Chairs",
-        "cost": 200,
+        "name": "Habitat Reade Mesh Office Chair",
+        "cost": 60,
         "category": "chair",
         "info": {
-            "recommend": "This highly versatile dining chair, enhances any dining room with a modern look. The organic shape of the seat with a curved back offers a supportive and comfortable seating solution. The sturdy base provides perfect stabilty. It is the perfect mix of style and comfort.",
+            "recommend": "Are you sitting comfortably? You soon can be. Our mesh office chair offers a specially designed mesh back to give you comfort and optimum support - with a padded seat to make long working hours more agreeable. A swivel mechanism and smooth height controllever allowyou to adjust this chair to your perfect working position. With sturdy castors and arm-free, it is easy to slide our chair under the desk when you're done working. In agrey finish with a smart metalbaseit's a stylish and practical item for home workers.",
             "parameter": {
-                "height": "<span>Seat height 47cm</span>",
-                "weight": "<span>Max user weight per chair 110kg</span>/n<span>Individual chair weight 5.35kg</span>",
-                "size": "<span>2 chairs supplied.</span>/n<span>Size H82.5, W48, D55cm.</span>/n<span>Self-assembly - 1 person recommended.</span>/n<span>Chair package size: H52, W67, D49cm.</span>"
+                "height": "<span>Seat height adjustable from 42 to 52cm.</span>",
+                "weight": "<span>Maximum user weight tested for 110kg.</span>/n<span>Weight 6.7kg.</span>",
+                "size": "<span>Overall maximum chair size H95, W42.5, D55cm.</span>/n<span>Seat size W43, D43.5cm.</span>/n<span>Package size H56, W59, D20cm.</span>"
             }
         },
         "url": [
             {
-                "color": "#00b2ee",
-                "src": "https://media.4rgos.it/i/Argos/9422878_R_Z001A?w=750&h=440&qlt=70"
+                "color": "#000000",
+                "src": "https://media.4rgos.it/i/Argos/6173670_R_Z001A?w=750&h=440&qlt=70"
             },
             {
                 "color": "#a4a4a4",
-                "src": "https://media.4rgos.it/i/Argos/9305249_R_Z001A?w=750&h=440&qlt=70"
+                "src": "https://media.4rgos.it/i/Argos/8807827_R_Z001A?w=750&h=440&qlt=70"
             }
         ],
         "rating": 4,
@@ -268,7 +264,7 @@
                 "src": "https://media.4rgos.it/i/Argos/9405558_R_Z001A?w=750&h=440&qlt=70"
             },
             {
-                "color": "#00b2ee",
+                "color": "#00BFFF",
                 "src": "https://media.4rgos.it/i/Argos/9505173_R_Z001A?w=750&h=440&qlt=70"
             }
         ],
@@ -392,7 +388,7 @@
         },
         "url": [
             {
-                "color": "#00b2ee",
+                "color": "#00BFFF",
                 "src": "https://media.4rgos.it/i/Argos/1173833_R_Z001A?w=750&h=440&qlt=70"
             }
         ],
@@ -468,11 +464,72 @@
         },
         "url": [
             {
-                "color": "#00b2ee",
+                "color": "#00BFFF",
                 "src": "https://media.4rgos.it/i/Argos/9606443_R_Z001A?w=750&h=440&qlt=70"
             }
         ],
         "rating": 4,
         "id": "V10"
+    },
+    {
+        "name": "Habitat Ergonomic Office Chair",
+        "cost": 135,
+        "category": "chair",
+        "info": {
+            "recommend": "Back in action. Don't sacrifice feeling good just because you're putting in overtime at the home office. This ergonomically designed chair provides you with better posture, comfort and movement with an adjustable headrest and lumbar support. And the durable, tight-weave, mesh back allows air to circulate, keeping your temperature regulated.",
+            "parameter": {
+                "height": "<span>Seat height 51.5cm.</span>/n<span>Seat height adjustable from 43.5 to 51.5cm.</span>",
+                "weight": "<span>Maximum user weight tested for 110kg.</span>/n<span>Weight 17.3kg.</span>",
+                "size": "<span>Overall maximum chair size H117.5, W71.5, D66cm.</span>/n<span>Package size H109.5, W71.5, D66cm.</span>/n<span>Seat size W52, D46cm.</span>"
+            }
+        },
+        "url": [
+            {
+                "color": "#a4a4a4",
+                "src": "https://media.4rgos.it/i/Argos/8340865_R_Z001A?w=750&h=440&qlt=70"
+            }
+        ],
+        "rating": 4,
+        "id": "C12"
+    },
+    {
+        "name": "Habitat Saber Faux Leather Gaming Chair",
+        "cost": 250,
+        "category": "chair",
+        "info": {
+            "recommend": "Conquer new territories and beat personal bests. With a cool, sporty aesthetic and ergonomic design, the Saber faux leather chair provides a comfortable seat for hours of gaming. It's upholstered in soft, faux leather and well-padded for comfort, with a contrasting red and black colour scheme. This chair is height adjustable, with swivel technology, and a curved back and seat shape that adjusts to your body. The rolling castors are suitable for all floors and ensure easy movement around your room. Game on.",
+            "parameter": {
+                "height": "<span>Seat height 51cm.</span>/n<span>Seat height adjustable from 41.5 to 51cm.</span>",
+                "weight": "<span>Maximum user weight tested for 110kg.</span>/n<span>Weight 7.1kg.</span>",
+                "size": "<span>Overall maximum chair size H83.5, W49.5, D56.5cm.</span>/n<span>Package size H28, W69, D53cm.</span>/n<span>Seat size W49.5, D42cm.</span>"
+            }
+        },
+        "url": [
+            {
+                "color": "#000000",
+                "src": "https://media.4rgos.it/i/Argos/9446861_R_Z001A?w=750&h=440&qlt=70"
+            }
+        ],
+        "rating": 5,
+        "id": "C13"
+    },
+    {
+        "name": "Habitat Ceramic Patterned Vase",
+        "cost": 14,
+        "category": "vase",
+        "info": {
+            "recommend": "A handsomely hand-painted display. Our rounded terracotta vase with blue detail brings a touch of organic Mediterranean charm to a sideboard or mantle. Mesmerisingly modern, its intricate squiggle patterns make each piece subtly unique. Fill its slim, tapered rim with a few dried flowers, or show it off as a standalone design statement. Arty and a la mode.",
+            "parameter": {
+                "size": "<span>Size H20, W18, D18cm.</span>/n<span>Diameter 18cm.</span>"
+            }
+        },
+        "url": [
+            {
+                "color": "#e9967a",
+                "src": "https://media.4rgos.it/i/Argos/1184547_R_Z001A?w=750&h=440&qlt=70"
+            }
+        ],
+        "rating": 4,
+        "id": "V11"
     }
 ]

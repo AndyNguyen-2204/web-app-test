@@ -4,7 +4,7 @@ import { BsBasket3 } from "react-icons/bs";
 import { TbZoomIn } from "react-icons/tb";
 import ColorProducts from '../../../ColorProducts/index';
 import { BiStar } from 'react-icons/bi';
-export default function Index({ e, index, numberPage }) {
+export default function Index({ e, index, numberPage, width }) {
     const showrating = (rating) => {
         const result = [];
         for (var i = 1; i <= rating; i++) {
@@ -19,8 +19,11 @@ export default function Index({ e, index, numberPage }) {
     useEffect(() => {
         setImgColor(0)
     }, [numberPage])
+    const divstyles = {
+        width: `${width}%`,
+    }
     return (
-        <div key={index} className='single__product'>
+        <div key={index} className='single__product' style={divstyles}>
             <div className='single__product__img'>
                 {
                     <img src={e ? e.url[imgColor].src : ""} alt="" />

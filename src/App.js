@@ -13,7 +13,7 @@ import Layout from './Component/Layout/layout';
 import Store from "./Component/Store/store"
 import "./SCSS/styles.scss"
 import Home from './Component/Home/Home';
-import { fetchAPI } from './API/fetchAPI';
+import ProductsPage from "../src/Component/ProductsPage/index"
 function App() {
   const dispatch = useDispatch()
   async function fetchAPI() {
@@ -42,6 +42,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/store' element={<Store />} />
+          <Route path='/products' element={<ProductsPage />} />
         </Routes>
       </Layout>
     </div>

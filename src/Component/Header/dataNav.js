@@ -11,8 +11,8 @@ export const data_nav_header = [
         slug: "/store"
     },
     {
-        name: "ACCESSORIES",
-        slug: "/accessories"
+        name: "PRODUCTS",
+        slug: "/products"
     },
     {
         name: "BRAND",

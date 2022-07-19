@@ -41,7 +41,7 @@ export default function ListProducts() {
         <>
             <div className='wrap__list__products'>
                 {dataPage.map((e, index) =>
-                    <SingleProduct e={e} index={index} numberPage={numberPage} />
+                    <SingleProduct e={e} index={index} numberPage={numberPage} width={23} />
                 )}
             </div>
             <div className='wrap__pagination'>

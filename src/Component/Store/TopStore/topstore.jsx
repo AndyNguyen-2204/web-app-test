@@ -7,6 +7,7 @@ export default function Topstore() {
     const [showPrice, setShowPrice] = useState(false)
     const [showColor, setShowColor] = useState(false)
     const dataProducts = useSelector((data) => data.data);
+    const [color, setColor] = useState()
     let hihi = []
     return (
         <div className='wrap__store__top'>
@@ -64,7 +65,7 @@ export default function Topstore() {
                     }}>Color</button>
                     {showColor == true ? <div className='wrap__color__list'>
                         {DATA_COLOR_TOP_STORE.map((e, index) =>
-                            <SingleColor key={index} color={e.color} name={e.name} />
+                            <b onClick={() => setColor(index)}> <SingleColor height={13} width={13} index={index} color={e.color} name={e.name} chooseColor={color} /></b>
                         )}
                     </div> : ""}
                 </div>

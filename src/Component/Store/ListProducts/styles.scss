@@ -1,15 +1,14 @@
 .wrap__list__products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 30px;
 
     .single__product {
-        width: 23%;
         margin: 10px;
         box-sizing: border-box;
         padding: 15px;
-        background-color: rgb(201, 194, 194);
+        background-color: #ffffff;
         text-align: center;
 
         &__img {
@@ -92,7 +91,7 @@
 
 .wrap__pagination {
     height: 50px;
-    background-color: #ffffff;
+    background-color: #f6f6f6;
     margin-top: 30px;
     display: flex;
     align-items: center;

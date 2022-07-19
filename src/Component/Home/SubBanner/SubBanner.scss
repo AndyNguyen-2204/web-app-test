@@ -1,0 +1,88 @@
+.wrap__subBanner {
+    margin-top: 94px;
+    width: 100%;
+    position: relative;
+
+    &__background {
+        width: 100%;
+        height: 700px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+    }
+
+    &__box {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        background-color: rgba(255, 255, 255, 0.9);
+        max-width: 545px;
+        height: 338px;
+        box-sizing: border-box;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+
+        &__content {
+            b {
+                color: rgba(50, 51, 52, 1);
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 33px;
+                letter-spacing: 0px;
+                text-align: left;
+                padding-bottom: 27px;
+                display: block;
+            }
+
+            &__cost {
+                display: flex;
+                align-items: center;
+                padding-bottom: 16px;
+
+                span {
+                    color: rgba(123, 81, 54, 1);
+
+                    &:first-child {
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 33px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                    }
+
+                    &:last-child {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 19px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 22px;
+                letter-spacing: 0px;
+                text-align: left;
+                padding-bottom: 16px;
+            }
+
+            button {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16px;
+                letter-spacing: 0px;
+                text-align: left;
+                padding: 15px 20px;
+            }
+        }
+    }
+}

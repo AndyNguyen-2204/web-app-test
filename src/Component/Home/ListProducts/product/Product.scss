@@ -1,0 +1,100 @@
+.wrap__product {
+    width: calc(25% - 10px);
+    height: 566px;
+    color: rgba(50, 51, 52, 1);
+    margin-top: 30px;
+
+    &:hover {
+        .add__to__cart {
+            display: flex;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 70%;
+        position: relative;
+        text-align: center;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 1s all;
+            }
+        }
+
+        .add__to__cart {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            display: flex;
+            background-color: rgba(255, 255, 255, 1);
+            width: 60%;
+            height: 50px;
+            border-radius: 30px;
+            justify-content: center;
+            align-items: center;
+            display: none;
+
+            span {
+                font-size: 25px;
+                display: inline-block;
+                padding: 0 5px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #4f4ce6;
+                }
+            }
+        }
+    }
+
+    &__content {
+        margin-top: 40px;
+
+        h1 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0px;
+            text-align: left;
+            text-transform: capitalize;
+            margin: 0;
+            padding-bottom: 13px;
+            cursor: pointer;
+
+            &:hover {
+                color: #4f4ce6;
+            }
+        }
+
+        li {
+            list-style: none;
+
+            .star_yl {
+                color: rgb(231, 231, 36);
+            }
+
+            .star_gr {
+                color: grey;
+            }
+        }
+
+        span {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: left;
+            display: inline-block;
+            margin-top: 15px;
+        }
+    }
+}

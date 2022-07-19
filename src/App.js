@@ -15,6 +15,27 @@ import "./SCSS/styles.scss"
 import Home from './Component/Home/Home';
 import ProductsPage from "../src/Component/ProductsPage/index"
 function App() {
+  const dispatch = useDispatch()
+  async function fetchAPI() {
+    try {
+      axios.get(`https://614742a965467e0017384abf.mockapi.io/Api/Products`)
+        .then(res => {
+          dispatch(fetchdata(res.data))
+        })
+    } catch (error) {
+      dispatch(dataerr(error))
+    }
+
+  }
+
+  useEffect(() => {
+    // axios.get(`https://614742a965467e0017384abf.mockapi.io/Api/Products`)
+    //   .then(res => {
+    //     dispatch(fetchdata(res.data))
+    //   }).catch(error => dispatch(dataerr(error)))
+    fetchAPI()
+  }, [])
+  const data = useSelector((data) => data.data);
   return (
     <div >
       <Layout>

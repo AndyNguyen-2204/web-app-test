@@ -9,7 +9,6 @@ export default function Topstore() {
     const dataProducts = useSelector((data) => data.data);
     const [color, setColor] = useState()
     let hihi = []
-    console.log(color);
     return (
         <div className='wrap__store__top'>
             <div className='wrap__store__top__left'>

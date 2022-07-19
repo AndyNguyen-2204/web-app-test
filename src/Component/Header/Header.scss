@@ -1,0 +1,92 @@
+.wrap__header {
+    padding: 30px 0 0 0;
+    color: #323334;
+
+    .container {
+        .header__content__top {
+            display: flex;
+            justify-content: space-between;
+
+            &__logo {
+                svg {
+                    width: 180px;
+                    height: 23px;
+                    cursor: pointer;
+                }
+            }
+
+            &__icon {
+                span {
+                    padding: 0 10px;
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+
+                    svg {
+                        font-size: 20px;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: rgb(0, 68, 255);
+                        }
+                    }
+                }
+            }
+        }
+
+        .header__content__nav {
+            margin-top: 20px;
+
+            hr {
+                height: 2px;
+                background-color: gray;
+                border: none;
+                margin: 0;
+            }
+
+            ul {
+                padding: 20px 50px;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    padding: 15px 30px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    cursor: pointer;
+                    color: #323334;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: rgb(0, 68, 255);
+                    }
+                }
+            }
+        }
+
+        .header__content__bottom {
+            display: flex;
+            padding: 0 50px;
+            justify-content: space-between;
+
+            &__icon {
+                display: flex;
+                align-items: center;
+                padding: 15px 30px;
+
+                div {
+                    padding-right: 10px;
+                }
+
+                span {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}

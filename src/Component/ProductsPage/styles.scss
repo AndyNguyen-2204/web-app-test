@@ -1,0 +1,128 @@
+ .wrap__products__page {
+     background-color: #f6f6f6;
+
+     .container {
+         display: flex;
+
+         .wrap__content__left {
+             width: 20%;
+             box-sizing: border-box;
+             padding: 20px 20px 0 0;
+             overflow-y: auto;
+             max-height: 600px;
+
+             &::-webkit-scrollbar {
+                 width: 6px;
+                 height: 50px;
+             }
+
+             &::-webkit-scrollbar-track {
+                 background: #ccc;
+                 height: 100px;
+             }
+
+             &::-webkit-scrollbar-thumb {
+                 background-color: #2b2720;
+                 box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                 /* Màu của thanh cuộn (scroll thumb) */
+                 border-radius: 5px;
+                 /* Bo góc scroll thumb */
+                 height: 20px;
+             }
+
+
+             &__category {
+
+                 &__section {
+                     text-transform: uppercase;
+                     font-weight: 700;
+                 }
+
+                 p {
+                     cursor: pointer;
+                     margin: 20px 0;
+
+                     &:hover {
+                         color: #c8a165
+                     }
+                 }
+             }
+
+             &__color {
+                 margin-top: 20px;
+
+                 &__section {
+                     text-transform: uppercase;
+                     font-weight: 700;
+                 }
+
+                 &__list {
+                     b {
+                         display: inline-block;
+                         margin: 10px 0;
+                         width: 100%;
+
+                         div {
+                             display: flex;
+                             justify-content: space-between;
+
+                             i {
+                                 display: inline-block;
+                                 margin-left: 20px;
+                                 font-style: normal;
+
+                                 &:hover {
+                                     color: #c8a165;
+                                     cursor: pointer;
+                                 }
+                             }
+
+                             span {
+                                 &:hover {
+                                     color: #c8a165;
+                                     cursor: pointer;
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+
+             &__price {
+                 margin-top: 20px;
+
+                 &__section {
+                     text-transform: uppercase;
+                     font-weight: 700;
+                 }
+
+                 .wrap__price__list {
+                     .squaredcheck {
+                         margin: 20px 0;
+
+                         input,
+                         label {
+                             cursor: pointer;
+
+                             &:hover {
+                                 color: #c8a165;
+                             }
+                         }
+
+                         input {
+                             margin: 0 10px 0 0;
+                         }
+                     }
+                 }
+             }
+         }
+
+         .wrap__content__right {
+             width: 80%;
+
+             .wrap__list__products {
+                 margin-top: 10px;
+             }
+         }
+     }
+ }

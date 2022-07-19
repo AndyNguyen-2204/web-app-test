@@ -1,0 +1,118 @@
+ .color_active {
+     border: 2px solid red;
+ }
+
+ .color {
+     border: 1px solid rgb(64, 64, 64);
+ }
+
+ .wrap__store__top {
+     display: flex;
+     background-color: #ffffff;
+     height: 50px;
+     box-sizing: border-box;
+     padding: 0 20px;
+     align-items: center;
+     position: relative;
+
+     &__left {
+         display: flex;
+
+         button {
+             border: none;
+             background-color: #ffffff;
+             margin-right: 15px;
+             color: gray;
+
+             &:hover {
+                 color: #c8a165
+             }
+         }
+
+         .wap__category__list {
+             width: 200px;
+             background-color: #c9c2c2;
+             border: 1px solid rgba(0, 0, 0, .15);
+             box-sizing: border-box;
+             padding: 10px 20px;
+             position: absolute;
+             top: 50px;
+             box-shadow: 2px 1px gray;
+
+             p {
+                 padding: 10px;
+                 cursor: pointer;
+
+                 &:hover {
+                     color: #ffffff;
+                 }
+             }
+
+         }
+
+         .wrap__price__list {
+             width: 200px;
+             background-color: #c9c2c2;
+             border: 1px solid rgba(0, 0, 0, .15);
+             box-sizing: border-box;
+             padding: 10px 20px;
+             box-shadow: 2px 1px gray;
+             position: absolute;
+             top: 50px;
+
+             .squaredcheck {
+                 padding: 10px;
+
+                 &:hover {
+                     color: #ffffff;
+                 }
+
+                 input,
+                 label {
+                     cursor: pointer;
+                 }
+
+                 label {
+                     margin-left: 10px;
+                 }
+             }
+
+         }
+
+         .wrap__color__list {
+             width: 300px;
+             background-color: #c9c2c2;
+             border: 1px solid rgba(0, 0, 0, .15);
+             box-sizing: border-box;
+             padding: 10px 20px;
+             box-shadow: 2px 1px gray;
+             position: absolute;
+             top: 50px;
+
+             div {
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 padding: 10px 0;
+
+                 span {
+                     &:hover {
+                         color: #ffffff;
+                         cursor: pointer;
+                     }
+                 }
+
+                 i {
+                     font-style: normal;
+                     display: inline-block;
+                     margin-left: 10px;
+
+                     &:hover {
+                         color: #ffffff;
+                         cursor: pointer;
+                     }
+                 }
+             }
+         }
+     }
+ }
